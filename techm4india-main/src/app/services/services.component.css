@@ -1,0 +1,333 @@
+.services-hero {
+  background-image: url('/assets/images/bg-service.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* 🔥 Add a dark overlay */
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* opacity adjusted */
+  z-index: 1;
+}
+
+/* 👇 Content positioned above the overlay */
+.services-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.services-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 13vh;
+}
+
+.services-overlay p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #eeeeee; /* Soft white for readability */
+  font-size: 5vh;
+}
+
+.highlight {
+  color: #00BFFF;
+}
+.services-area {
+  background-image: url('/assets/images/bgA-service.jpg'); /* 🔁 Replace with your actual image */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.services-area::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+.services-area-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.services-area-overlay h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.highlight {
+  color: #00BFFF;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.service-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 191, 255, 0.2);
+}
+.service-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto; /* centers horizontally and adds vertical spacing */
+  padding: 0 20px;
+}
+
+.service-content h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.service-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+.process-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.process-section h1 {
+  font-size: 8vh;
+  margin-bottom: 10px;
+
+}
+
+.process-intro {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #555;
+}
+
+.process-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  gap: 20px;
+  padding: 40px 0 20px; /* added padding top for circle space */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+/* This draws the horizontal line behind the steps */
+.process-horizontal::before {
+  content: "";
+  position: absolute;
+  top: 20px; /* Adjust to center line vertically with circles */
+  left: 0;
+  right: 0;
+  height: 4px; /* Thickness of the line */
+  background-color: #00BFFF;
+  z-index: 1;
+}
+
+.process-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding-top: 40px;
+  z-index: 2; /* Make sure steps are above the line */
+}
+
+.circle {
+  background-color: #00BFFF;
+  color: white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  position: absolute;
+  top: 0; /* Move to top to align with line */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 4px solid #f9f9f9; /* white border to create cut-through effect */
+  z-index: 3; /* Ensure circle is on top */
+}
+
+.process-step h3 {
+  margin: 50px 0 5px; /* Add margin top to avoid overlap with circle */
+  font-size: 18px;
+  color: #222;
+}
+
+.process-step p {
+  font-size: 14px;
+  color: #555;
+}
+.why-choose-section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.why-choose-section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-choose-section h2 {
+  font-size: 8vh;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.feature-box {
+  background: #f9f9f9;
+  padding: 25px 20px;
+  flex: 0 0 30%; /* fixed width to fit 3 boxes exactly */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+.start-journey-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f8ff; /* light background */
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.15);
+  flex-wrap: nowrap;
+}
+
+.start-journey-section h2 {
+  font-size: 6vh;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #007bff;
+  font-family: 'Roboto', sans-serif;
+  flex-wrap: nowrap;
+}
+
+.start-journey-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* if using anchor */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateX(6px);
+}
+
+.arrow {
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .arrow {
+  transform: translateX(6px);
+}
+.red-text{
+  color:red;
+}
+

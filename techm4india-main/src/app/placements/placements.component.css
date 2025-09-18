@@ -1,0 +1,108 @@
+/* Apply modern font */
+.placements-section,
+.placements-hero,
+.student-card {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero section with background image */
+.placements-hero {
+  background-image: url('/assets/images/placements.jpg'); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.placements-overlay {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+}
+
+.placements-overlay h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: black
+}
+
+.placements-overlay p {
+  font-size: 18px;
+  font-weight: 400;
+  color:black;
+}
+
+/* Section with heading */
+.placements-section {
+  background-color: #f7f9fb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.placements-section h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.placement-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for student cards */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual student card */
+.student-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.student-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.student-card p {
+  font-size: 15px;
+  margin: 4px 0;
+  color: #333;
+}
+
+.student-card .course {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+  margin-top: 4px;
+}

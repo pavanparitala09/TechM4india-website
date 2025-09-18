@@ -1,0 +1,60 @@
+.contact-hero-banner {
+  background-image: url('/assets/images/bg-contact.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.contact-hero-overlay {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-hero-overlay h1 {
+  color:black;
+  font-size: 7vh;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+.higlight1 {
+  color: #00BFFF;
+}
+/* Existing contact section styles */
+.contact-us-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.contact-form-container,
+.contact-info-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px 24px;
+  background-color: #00BFFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
